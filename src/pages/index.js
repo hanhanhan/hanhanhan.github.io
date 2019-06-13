@@ -1,21 +1,32 @@
 import React from "react"
 import { Link } from "gatsby"
+import { ThemeProvider } from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Project from "../components/project.js"
+import { projects } from "../components/projects.js"
+
+
+const theme = {
+  one: "mediumseagreen",
+  two: "salmon",
+};
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <ThemeProvider theme={theme}>
+    <Layout>
+      <SEO title="Home" />
+      {
+        projects.map(project => 
+          { 
+            return <Project key={project.name} {...project} />
+          }
+        )
+      }
+      <Link to="/workhistory/">Work History</Link>
+    </Layout>
+  </ThemeProvider>
 )
 
 export default IndexPage

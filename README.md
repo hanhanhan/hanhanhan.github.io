@@ -1,3 +1,5 @@
+Hannah's Gatsby-based home page.
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
