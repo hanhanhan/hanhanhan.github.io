@@ -7,33 +7,47 @@ import {GoMarkGithub} from "react-icons/go"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `orange`,
-      marginBottom: `1.45rem`,
+      background: `lavender`,
     }}
   >
     <div
       style={{
         display: `flex`,
+        alignItems: `center`,
         justifyContent: `space-between`,
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ 
+        padding: 0,
+        margin: 0,
+        }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
+            padding: `0`,
+            margin: `0`,
           }}
         >
           {siteTitle}
         </Link>
       </h1>
-        <a href="https://github.com/hanhanhan/">
-          <GoMarkGithub size={`3em`} />
-        </a>
+      <a href="https://github.com/hanhanhan/"
+      style={{
+        padding: `0`,
+        margin: `0`,
+        display: `flex`,
+        alignItems: `center`,
+      }}
+      >
+        <GoMarkGithub size={`3em`} color={`salmon`}
+              style={{
+                padding: `0`,
+                margin: `0`,
+              }}
+        />
+      </a>
     </div>
   </header>
 )

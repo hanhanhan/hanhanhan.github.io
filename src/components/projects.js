@@ -1,12 +1,12 @@
 import React from "react"
 
-const sampleProject = {
-    name: ``,
-    link: ``,
-    description: <></>,
-    language: ``,
-    year: ``,
-}
+// const sampleProject = {
+//     name: ``,
+//     link: ``,
+//     description: <></>,
+//     language: ``,
+//     year: ``,
+// }
 
 const fakebus = {
     name: `Fakebus`,

@@ -14,7 +14,6 @@
     "gatsby-plugin-offline": "^2.1.3",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.1.5",
-    "gatsby-plugin-typography": "^2.2.13",
     "gatsby-source-filesystem": "^2.0.39",
     "gatsby-transformer-sharp": "^2.1.21",
     "prop-types": "^15.7.2",
@@ -22,10 +21,20 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
-    "react-typography": "^0.16.19",
-    "typography": "^0.16.19"
+    "reset-css": "^4.0.1"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "prettier": "^1.18.2"
   },
   "keywords": [
