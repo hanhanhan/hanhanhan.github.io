@@ -1,29 +1,52 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { css } from '@emotion/core'
+import Color from 'color'
+import { projectHighlight } from './colors'
 
-const Project = props => (
-  <>
-    <a
+// Border radius random value for fun
+const roughly = () => Math.floor(Math.random() * 100).toString(10)
+
+const Project = props => {
+  const { name, link, year, description } = props
+
+  return (
+    <div
       css={css`
-        text-decoration: none;
+        margin: 1em;
       `}
-      href={props.link}
     >
-      <h3
+      <a
         css={css`
-          text-decoration: none;
-		  padding: 0.5em 0.5em;
-		  margin: 0.2em;
-          background-color: tomato;
+		  text-decoration: none;
         `}
+        href={link}
       >
-        {props.name}
-      </h3>
-    </a>
-    <div>{props.description}</div>
-  </>
-)
+        <h3
+		  css={css`
+		  	display: inline-block;
+            text-decoration: none;
+            padding: 0em;
+            margin: 1.5em 0 0.6em 0;
+            background-color: ${projectHighlight.toString()};
+            border-radius: ${roughly()}% ${roughly()}% ${roughly()}%
+              ${roughly()}%;
+          `}
+        >
+          {name}
+        </h3>
+        <h3
+          css={css`
+            display: inline-block;
+          `}
+        >
+          {year}
+        </h3>
+      </a>
+      <div>{description}</div>
+    </div>
+  )
+}
 
 Project.propTypes = {
   name: PropTypes.string.isRequired,
