@@ -1,6 +1,6 @@
   @font-face {
     font-family: 'Lato';
-    font-style: normal;
+    font-style: light;
     font-display: swap;
     font-weight: 400;
     src:
@@ -11,15 +11,37 @@
   }
 
   @font-face {
-    font-family: 'Monoton';
+    font-family: 'Lato';
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    font-stretch: ultra-expanded;
     src:
-      local('Monoton Regular'),
-      local('Monoton-Regular'),
-      url('../assets/fonts/Monoton/Monoton-Regular.ttf') format('truetype');
+      local('Lato Regular'),
+      local('Lato-Regular'),
+      local('Lato'),
+      url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: bold;
+    font-display: swap;
+    font-weight: 700;
+    src:
+      local('Lato Bold'),
+      local('Lato-Bold'),
+      url('../assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: black;
+    font-display: swap;
+    font-weight: 900;
+    src:
+      local('Lato Black'),
+      local('Lato-Black'),
+      url('../assets/fonts/Lato/Lato-Black.ttf') format('truetype');
   }
 
   @font-face {
@@ -33,19 +55,6 @@
       url('../assets/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
     /* TODO: Reduce to glyphs used */
   }
-
-  @font-face {
-    font-family: 'Quando';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400;
-    font-stretch: ultra-expanded;
-    src:
-      local('Quando Regular '),
-      local('Quando-Regular'),
-      url('../assets/fonts/Quando/Quando-Regular.ttf') format('truetype');
-  }
-
 
   html {
     font-family: Lato, sans-serif;
@@ -87,6 +96,7 @@
 
   h3 {
     font-size: 1.5em;
+    font-style: black;
   }
 
   a {
@@ -95,6 +105,10 @@
 
   p {
     line-height: 1.5em;
+    font-style: light;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
   }
 
   /* 

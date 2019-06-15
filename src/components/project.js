@@ -29,11 +29,11 @@ const Project = props => {
             justify-content: space-between;
             padding: 0em;
             margin: 1.5em 0 0.6em 0;
-            background-color: ${projectHighlight.toString()};
-            border-radius: ${roughly()}% ${roughly()}% ${roughly()}%
-              ${roughly()}%;
+            // eslint-disable-next-line prettier/prettier
+            border-radius: ${roughly()}% ${roughly()}% ${roughly()}% ${roughly()}%;
+            background-color: honeydew;
             &:hover {
-              background-color: honeydew;
+              background-color: ${projectHighlight.toString()};
             }
           `}
         >

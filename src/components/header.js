@@ -1,8 +1,8 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import {GoMarkGithub} from "react-icons/go"
-
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { GoMarkGithub } from 'react-icons/go'
+import { baseFont } from './colors'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -17,14 +17,16 @@ const Header = ({ siteTitle }) => (
         justifyContent: `space-between`,
       }}
     >
-      <h1 style={{ 
-        padding: 0,
-        margin: 0,
-        }}>
+      <h1
+        style={{
+          padding: 0,
+          margin: 0,
+        }}
+      >
         <Link
           to="/"
           style={{
-            color: `black`,
+            color: baseFont.darken(0.5).toString(),
             textDecoration: `none`,
             padding: `0`,
             margin: `0`,
@@ -33,19 +35,22 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <a href="https://github.com/hanhanhan/"
-      style={{
-        padding: `0`,
-        margin: `0`,
-        display: `flex`,
-        alignItems: `center`,
-      }}
+      <a
+        href="https://github.com/hanhanhan/"
+        style={{
+          padding: `0`,
+          margin: `0`,
+          display: `flex`,
+          alignItems: `center`,
+        }}
       >
-        <GoMarkGithub size={`3em`} color={`salmon`}
-              style={{
-                padding: `0`,
-                margin: `0`,
-              }}
+        <GoMarkGithub
+          size="3em"
+          color="salmon"
+          style={{
+            padding: `0`,
+            margin: `0`,
+          }}
         />
       </a>
     </div>

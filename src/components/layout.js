@@ -4,14 +4,14 @@ import { css } from '@emotion/core'
 import Header from './header'
 import 'reset-css'
 import './layout.css'
-import { baseBackground } from './colors'
+import { baseBackground, baseFont } from './colors'
 
-console.log('baseBackground', baseBackground.string())
 const Layout = ({ children }) => (
   <div
-  css={css`
-    background-color: aliceblue;
-  `}
+    css={css`
+      background-color: aliceblue;
+      color: ${baseFont.toString()};
+    `}
   >
     <Header siteTitle="hanhanhan" />
     <div
@@ -19,7 +19,6 @@ const Layout = ({ children }) => (
         max-width: 960;
         padding: 0px 1rem;
         margin: 0.5rem 0;
-        /* background-color: ${baseBackground.string()}; */
       `}
     >
       <main>{children}</main>

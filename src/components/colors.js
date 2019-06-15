@@ -3,6 +3,6 @@ import Color from 'color'
 
 const baseBackground = Color('aliceblue')
 const projectHighlight = baseBackground.darken(0.07)
-const projectYear = projectHighlight.desaturate(0.3)
+const baseFont = Color('#061c3f')
 
-export { baseBackground, projectHighlight }
+export { baseBackground, projectHighlight, baseFont, Color }

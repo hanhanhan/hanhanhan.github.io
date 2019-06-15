@@ -59,7 +59,7 @@ const flyaway = {
     name: `Flyaway`,
     link: `https://hanhanhan.github.io/flyaway/`,
     description: <>
-    <p>The fly has a happy, random flight path until needs to evade your mouse at 90&#176 angles. Inspired by (and sprites adapted from) <a href="http://dx.doi.org/10.1126/science.1248955">research</a> described in <a href="http://voices.nationalgeographic.com/2014/04/10/insects-fruit-flies-science-flight-animals/">National Geographic</a>.</p>
+    <p>The fly has a happy, random flight path until needs to evade your mouse at 90&#176; angles. Inspired by (and sprites adapted from) <a href="http://dx.doi.org/10.1126/science.1248955">research</a> described in <a href="http://voices.nationalgeographic.com/2014/04/10/insects-fruit-flies-science-flight-animals/">National Geographic</a>.</p>
     </>,
     language: `javascript`,
     year: `2015`,
