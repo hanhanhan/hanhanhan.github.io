@@ -13,8 +13,8 @@ const Project = props => (
       <h3
         css={css`
           text-decoration: none;
-          padding: 0.5em 0.5em;
-          margin: 1em 0 0.2em;
+		  padding: 0.5em 0.5em;
+		  margin: 0.2em;
           background-color: tomato;
         `}
       >
