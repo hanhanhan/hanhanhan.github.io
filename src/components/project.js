@@ -20,17 +20,17 @@ const Project = props => {
         css={css`
           text-decoration: none;
         `}
-        href={link}
       >
         <a
+          href={link}
           css={css`
             text-decoration: none;
             display: flex;
             justify-content: space-between;
             padding: 0em;
             margin: 1.5em 0 0.6em 0;
-            // eslint-disable-next-line prettier/prettier
-            border-radius: ${roughly()}% ${roughly()}% ${roughly()}% ${roughly()}%;
+            border-radius: ${roughly()}% ${roughly()}% ${roughly()}%
+              ${roughly()}%;
             background-color: honeydew;
             &:hover {
               background-color: ${projectHighlight.toString()};

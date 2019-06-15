@@ -16,7 +16,6 @@ const Layout = ({ children }) => (
     <Header siteTitle="hanhanhan" />
     <div
       css={css`
-        max-width: 960;
         padding: 0px 1rem;
         margin: 0.5rem 0;
       `}
