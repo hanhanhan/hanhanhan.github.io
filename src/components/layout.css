@@ -31,6 +31,7 @@
       local('Pacifico Regular'),
       local('Pacifico-Regular'),
       url('../assets/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+    /* TODO: Reduce to glyphs used */
   }
 
   @font-face {
@@ -90,6 +91,10 @@
 
   a {
     color: inherit;
+  }
+
+  p {
+    line-height: 1.5em;
   }
 
   /* 

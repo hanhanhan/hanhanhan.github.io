@@ -4,7 +4,7 @@ import { css } from '@emotion/core'
 import Color from 'color'
 import { projectHighlight } from './colors'
 
-// Border radius random value for fun
+// Random border radius value for fun
 const roughly = () => Math.floor(Math.random() * 100).toString(10)
 
 const Project = props => {
@@ -16,33 +16,31 @@ const Project = props => {
         margin: 1em;
       `}
     >
-      <a
+      <h3
         css={css`
-		  text-decoration: none;
+          text-decoration: none;
         `}
         href={link}
       >
-        <h3
-		  css={css`
-		  	display: inline-block;
+        <a
+          css={css`
             text-decoration: none;
+            display: flex;
+            justify-content: space-between;
             padding: 0em;
             margin: 1.5em 0 0.6em 0;
             background-color: ${projectHighlight.toString()};
             border-radius: ${roughly()}% ${roughly()}% ${roughly()}%
               ${roughly()}%;
+            &:hover {
+              background-color: honeydew;
+            }
           `}
         >
-          {name}
-        </h3>
-        <h3
-          css={css`
-            display: inline-block;
-          `}
-        >
-          {year}
-        </h3>
-      </a>
+          <span>{name}</span>
+          <span>{year}</span>
+        </a>
+      </h3>
       <div>{description}</div>
     </div>
   )
@@ -50,6 +48,8 @@ const Project = props => {
 
 Project.propTypes = {
   name: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  year: PropTypes.string,
   description: PropTypes.node.isRequired,
 }
 
