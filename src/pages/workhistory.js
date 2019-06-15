@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 import resume from '../assets/HannahLazarusResume.pdf'
 // import linkedin from '../images/LI-In-Bug.png'
-import linkedin from '../images/linkedin.svg'
+import Linkedin from '../images/linkedin.svg'
 
 const Where = props => {
   return <>{props.children}</>
@@ -33,20 +33,6 @@ const WorkHistoryPage = () => (
       <h2>PDF</h2>
     </a>
 
-    <a
-      href="https://www.linkedin.com/in/hannah-lazarus-71b1862/"
-      css={css`
-      border: 1px solid tomato;
-        /* background-color: tomato; */
-        fill: #0077b5;
-        path {
-          fill: #0077b5;
-        }
-      `}
-    >
-      <svg alt="linkedin logo" height="50" src={linkedin} />
-    </a>
-    <linkedin />
     <div       css={css`
       border: 1px solid tomato;
         /* background-color: tomato; */
