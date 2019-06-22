@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { css } from '@emotion/core'
 import Color from 'color'
-import { baseBackground, projectHighlight } from './colors'
+import { baseBackground, projectHighlight, projectBackground } from './colors'
 
 // Random border radius value for fun
 const roughly = () => Math.floor(Math.random() * 100).toString(10)
@@ -16,31 +16,34 @@ const Project = props => {
         margin: 1em;
       `}
     >
-      <h3
-        css={css`
-          text-decoration: none;
-        `}
-      >
+      <h3>
         <a
           href={link}
           css={css`
-            text-decoration: none;
             display: flex;
             justify-content: space-between;
-            padding: 0em;
-            margin: 1.5em 0 0.6em 0;
-            border-radius: ${roughly()}% ${roughly()}% ${roughly()}%
-              ${roughly()}%;
-            background-color: ${baseBackground.darken(0.1)};
+            padding: 0.5em;
+            padding-left: 0;
+            margin-top: 0.5em;
+            border-radius: 0% ${roughly()}% ${roughly()}%
+              0}%;
+            background-color: ${projectBackground.toString()};
             &:hover {
               background-color: ${projectHighlight.toString()};
             }
           `}
         >
-          <span>{name}</span>
-          <span>{year}</span>
+          {name}
         </a>
       </h3>
+      <h4
+        css={css`
+          padding: 0.5em 0;
+          background-color: ${projectBackground.saturate(0.1).toString()}
+        `}
+      >
+      {year}
+      </h4>
       <div>{description}</div>
     </div>
   )
