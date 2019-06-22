@@ -11,6 +11,7 @@ const Layout = ({ children }) => (
     css={css`
       background-color: aliceblue;
       color: ${baseFont.toString()};
+      min-height: 100vh;
     `}
   >
     <Header siteTitle="hanhanhan" />
@@ -20,7 +21,13 @@ const Layout = ({ children }) => (
         margin: 0.5rem 0;
       `}
     >
-      <main>{children}</main>
+      <main
+        css={css`
+          min-height: 75vh;
+        `}
+      >
+        {children}
+      </main>
       <footer
         css={css`
           padding: 1rem;

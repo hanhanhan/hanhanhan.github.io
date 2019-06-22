@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { css } from '@emotion/core'
 import Color from 'color'
-import { projectHighlight } from './colors'
+import { baseBackground, projectHighlight } from './colors'
 
 // Random border radius value for fun
 const roughly = () => Math.floor(Math.random() * 100).toString(10)
@@ -31,7 +31,7 @@ const Project = props => {
             margin: 1.5em 0 0.6em 0;
             border-radius: ${roughly()}% ${roughly()}% ${roughly()}%
               ${roughly()}%;
-            background-color: honeydew;
+            background-color: ${baseBackground.darken(0.1)};
             &:hover {
               background-color: ${projectHighlight.toString()};
             }
