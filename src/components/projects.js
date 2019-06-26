@@ -59,7 +59,7 @@ const deliquescent = {
       </p>
     </>
   ),
-  language: `javascript`,
+  language: [`javascript`],
   year: `2016`,
 }
 
@@ -78,7 +78,7 @@ const rattle = {
       </p>
     </>
   ),
-  language: `javascript`,
+  language: [`javascript`],
   year: `2016`,
 }
 
@@ -98,7 +98,7 @@ const cellular = {
       </p>
     </>
   ),
-  language: `javascript`,
+  language: [`javascript`],
   year: `2015`,
 }
 
@@ -119,7 +119,7 @@ const flyaway = {
       </p>
     </>
   ),
-  language: `javascript`,
+  language: [`javascript`],
   year: `2015`,
 }
 
@@ -143,7 +143,7 @@ const pinkwater = {
       </p>
     </>
   ),
-  language: `python`,
+  language: [`python`],
   year: `2015`,
 }
 
@@ -160,7 +160,7 @@ const bokeh = {
       </p>
     </>
   ),
-  language: `python`,
+  language: [`python`],
   year: `2016`,
 }
 
@@ -202,7 +202,7 @@ const robotrkelly = {
       </p>
     </>
   ),
-  language: `python`,
+  language: [`python`],
   year: `2016`,
 }
 

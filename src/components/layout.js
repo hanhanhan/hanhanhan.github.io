@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { css } from '@emotion/core'
 import Header from './header'
 import 'reset-css'
-import './layout.css'
-import { baseBackground, baseFont } from './colors'
+import '../style/layout.css'
+import { baseBackground, baseFont } from '../style/colors'
 
 const Layout = ({ children }) => (
   <div
@@ -21,23 +21,22 @@ const Layout = ({ children }) => (
         margin: 0.5rem 0;
       `}
     >
-      <main
+      <main>{children}</main>
+      <div
         css={css`
-          min-height: 75vh;
-        `}
-      >
-        {children}
-      </main>
-      <footer
-        css={css`
-          padding: 1rem;
           display: flex;
           justify-content: center;
-          flex-wrap: nowrap;
         `}
       >
-        © {new Date().getFullYear()}
-      </footer>
+        <footer
+          css={css`
+            position: absolute;
+            bottom: 10px;
+          `}
+        >
+          © {new Date().getFullYear()}
+        </footer>
+      </div>
     </div>
   </div>
 )

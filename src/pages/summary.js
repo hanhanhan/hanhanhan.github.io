@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 import resume from '../assets/data/HannahLazarusResume.pdf'
 // import linkedin from '../images/LI-In-Bug.png'
-import LinkedIn from '../images/linkedin'
+import LinkedIn from '../assets/images/linkedin'
 import { GoMarkGithub } from 'react-icons/go'
 
 
