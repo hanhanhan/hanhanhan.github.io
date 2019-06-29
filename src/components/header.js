@@ -51,10 +51,10 @@ const Header = ({ siteTitle }) => (
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/workhistory">Work History</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/info">More Info</Link>
           </li>
         </ul>
       </nav>
