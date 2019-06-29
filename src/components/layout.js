@@ -4,24 +4,29 @@ import { css } from '@emotion/core'
 import Header from './header'
 import 'reset-css'
 import '../style/layout.css'
-import { baseFont } from '../style/colors'
+import { baseFont, baseBackground } from '../style/colors'
 
 const Layout = ({ children }) => (
   <div
     css={css`
-      background-color: aliceblue;
+      background-color: ${baseBackground.toString()};
       color: ${baseFont.toString()};
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     `}
   >
-    <Header siteTitle="hanhanhan" />
+    <div>
+      <Header siteTitle="hanhanhan" />
+      <main>{children}</main>
+    </div>
     <div
       css={css`
         display: flex;
         flex-direction: column;
       `}
     >
-      <main>{children}</main>
       <footer
         css={css`
           align-self: center;

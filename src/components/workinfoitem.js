@@ -37,7 +37,7 @@ const InfoItem = ({ Icon, iconSize = '4em', description, link }) => (
 )
 
 InfoItem.propTypes = {
-  Icon: PropTypes.element,
+  Icon: PropTypes.oneOfType([PropTypes.func, PropTypes.element]),
   iconSize: PropTypes.string,
   description: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,

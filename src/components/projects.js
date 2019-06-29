@@ -30,7 +30,7 @@ const deliquescent = {
   link: `https://hanhanhan.github.io/deliquescent/`,
   description: (
     <>
-      <p>Click and drag.</p>
+      <p>Click and drag. Not mobile touch friendly.</p>
       <p>
         A variation on{' '}
         <a href="http://codepen.io/tmrDevelops/full/OPZKNd">
@@ -68,13 +68,12 @@ const rattle = {
   link: `https://hanhanhan.github.io/rattle/`,
   description: (
     <>
-      <p>Click and drag the beads.</p>
+      <p>Click and drag the beads. Not mobile touch friendly.</p>
       <p>
         I started by looking at this{' '}
         <a href="https://codepen.io/dissimulate/pen/eZxEBO">Tearable Cloth</a>{' '}
         example, made it 1D, did not make it tearable, and changed the
-        constraints. Oh, and it's in ES6, not guaranteed to work in an older
-        browser. So really, it's terrible cloth.
+        constraints. So really, it's terrible cloth.
       </p>
     </>
   ),
@@ -94,7 +93,7 @@ const cellular = {
         <a href="http://natureofcode.com/book/chapter-7-cellular-automata/">
           Nature of Code
         </a>{' '}
-        was my starting point. The first javascript toy I've built.
+        was my starting point. The first javascript toy I built.
       </p>
     </>
   ),
@@ -156,7 +155,7 @@ const bokeh = {
       <p>
         Resting metabolism rate plotted using a user-selected equation and
         parameters. Parameters are equation-dependent. Playing with the Bokeh
-        library for data visualization. (Work in progress.)
+        library for data visualization. 
       </p>
     </>
   ),
@@ -172,7 +171,7 @@ const robotrkelly = {
       <p>
         My first server based site. It included a Flask site, database, a server
         I set up on Digital Ocean, HTTPS, nginx, changing around some systemd
-        settings, and a cron job. It took a bit for me to figure out.
+        settings, and a cron job. 
       </p>
       <p>
         Inspired by a challenge from{' '}

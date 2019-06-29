@@ -33,7 +33,7 @@ const Project = props => {
           href={link}
           css={css`
             display: flex;
-            justify-content: space-between;
+            justify-content: left;
             padding: 0.5em;
             padding-left: 0;
             margin-top: 0.5em;
@@ -51,7 +51,6 @@ const Project = props => {
       <h4
         css={css`
           padding: 0.5em 0;
-          background-color: ${projectBackground.saturate(0.1).toString()};
         `}
       >
         <span

@@ -50,9 +50,6 @@ const Header = ({ siteTitle }) => (
           <li>
             <Link to="/projects">Projects</Link>
           </li>
-          <li>
-            <Link to="/info">More Info</Link>
-          </li>
         </ul>
       </nav>
     </div>
