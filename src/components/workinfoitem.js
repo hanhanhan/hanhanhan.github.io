@@ -12,10 +12,8 @@ const InfoItem = ({ Icon, iconSize = '4em', description, link }) => (
       text-decoration: none;
       justify-items: flex-start;
       transition: background-color 1s ease-in-out;
-      /* transition: box-shadow 0.5s ease-in-out; */
       :hover {
         background-color: ${baseBackground.darken(0.1).toString()};
-        /* box-shadow: 2px 2px 4px 4px ${baseBackground.darken(0.1).toString()}; */
       }
     `}
   >
