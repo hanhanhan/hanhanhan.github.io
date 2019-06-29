@@ -17,26 +17,19 @@ const Layout = ({ children }) => (
     <Header siteTitle="hanhanhan" />
     <div
       css={css`
-        padding: 0px 1rem;
-        margin: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
       `}
     >
       <main>{children}</main>
-      <div
+      <footer
         css={css`
-          display: flex;
-          justify-content: center;
+          align-self: center;
+          margin: 10px;
         `}
       >
-        <footer
-          css={css`
-            position: absolute;
-            bottom: 10px;
-          `}
-        >
-          © {new Date().getFullYear()}
-        </footer>
-      </div>
+        © {new Date().getFullYear()}
+      </footer>
     </div>
   </div>
 )
