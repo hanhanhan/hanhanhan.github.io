@@ -4,7 +4,7 @@ import { css } from '@emotion/core'
 import Header from './header'
 import 'reset-css'
 import '../style/layout.css'
-import { baseBackground, baseFont } from '../style/colors'
+import { baseFont } from '../style/colors'
 
 const Layout = ({ children }) => (
   <div

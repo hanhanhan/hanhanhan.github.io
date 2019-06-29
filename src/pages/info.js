@@ -8,7 +8,7 @@ import resume from '../assets/data/HannahLazarusResume.pdf'
 import LinkedIn from '../assets/images/linkedin'
 import InfoItem from '../components/workinfoitem'
 
-const WorkHistoryPage = () => (
+const InfoPage = () => (
   <Layout>
     <div
       css={css`
@@ -34,8 +34,52 @@ const WorkHistoryPage = () => (
         description="Linked In"
         link="https://www.linkedin.com/in/hannah-lazarus-71b1862/"
       />
+      <InfoItem Icon={IoMdPaper} description="PDF Resume" link={resume} />
+      <InfoItem
+        Icon={GoMarkGithub}
+        description="Github"
+        link="https://github.com/hanhanhan/"
+      />
+      <InfoItem
+        Icon={LinkedIn}
+        description="Linked In"
+        link="https://www.linkedin.com/in/hannah-lazarus-71b1862/"
+      />
+      <InfoItem Icon={IoMdPaper} description="PDF Resume" link={resume} />
+      <InfoItem
+        Icon={GoMarkGithub}
+        description="Github"
+        link="https://github.com/hanhanhan/"
+      />
+      <InfoItem
+        Icon={LinkedIn}
+        description="Linked In"
+        link="https://www.linkedin.com/in/hannah-lazarus-71b1862/"
+      />
+      <InfoItem Icon={IoMdPaper} description="PDF Resume" link={resume} />
+      <InfoItem
+        Icon={GoMarkGithub}
+        description="Github"
+        link="https://github.com/hanhanhan/"
+      />
+      <InfoItem
+        Icon={LinkedIn}
+        description="Linked In"
+        link="https://www.linkedin.com/in/hannah-lazarus-71b1862/"
+      />
+      <InfoItem Icon={IoMdPaper} description="PDF Resume" link={resume} />
+      <InfoItem
+        Icon={GoMarkGithub}
+        description="Github"
+        link="https://github.com/hanhanhan/"
+      />
+      <InfoItem
+        Icon={LinkedIn}
+        description="Linked In"
+        link="https://www.linkedin.com/in/hannah-lazarus-71b1862/"
+      />
     </div>
   </Layout>
 )
 
-export default WorkHistoryPage
+export default InfoPage

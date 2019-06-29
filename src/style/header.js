@@ -27,7 +27,6 @@ export const menuToggle = css`
   -webkit-user-select: none;
   user-select: none;
 
-
   input {
     display: block;
     width: 40px;

@@ -1,11 +1,8 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
-import { GoMarkGithub } from 'react-icons/go'
-import { css } from '@emotion/core'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import { baseFont, headerBackground } from '../style/colors'
 import { menuToggle } from '../style/header'
-import NavLink from './navlink'
 
 const Header = ({ siteTitle }) => (
   <header
