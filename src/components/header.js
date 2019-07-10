@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { baseFont, headerBackground } from '../style/colors'
+import { headerFont, headerBackground } from '../style/colors'
 import { menuToggle } from '../style/header'
 
 const Header = ({ siteTitle }) => (
@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: baseFont.darken(0.5).toString(),
+            color: headerFont.toString(),
             textDecoration: `none`,
             padding: `0`,
             margin: `0`,

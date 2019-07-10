@@ -127,7 +127,7 @@ const pinkwater = {
   link: `https://github.com/hanhanhan/pinkwater/blob/master/pinkwater_mp3_scrape.py`,
   description: (
     <>
-      <p>My first Python program!</p>
+      <p>My first Python program.</p>
       <p>
         Children's author{' '}
         <a href="http://pinkwater.com/podcast/">Daniel Pinkwater</a> posted

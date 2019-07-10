@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { css } from '@emotion/core'
-import { baseBackground } from '../style/colors';
+import { projectHighlight } from '../style/colors';
 
 const InfoItem = ({ Icon, iconSize = '4em', description, link }) => (
   <a
@@ -11,9 +11,12 @@ const InfoItem = ({ Icon, iconSize = '4em', description, link }) => (
       padding: 0.5em;
       text-decoration: none;
       justify-items: flex-start;
-      transition: background-color 1s ease-in-out;
+      transition: background-color 0.5s ease-in-out;
       :hover {
-        background-color: ${baseBackground.darken(0.1).toString()};
+        background-color: ${projectHighlight.toString()};
+      }
+      @media screen and (min-width: 500px){
+        min-width: 50%;
       }
     `}
   >

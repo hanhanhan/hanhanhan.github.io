@@ -9,7 +9,8 @@ import { projectHighlight, projectBackground } from '../style/colors'
 */
 
 // Random border radius value for fun
-const roughly = () => Math.floor(Math.random() * 100).toString(10)
+const roughly = (ratio = 1) =>
+  Math.floor(Math.random() * 100 * ratio).toString(10)
 
 const languageIcons = {
   python: <FaPython />,
@@ -37,8 +38,9 @@ const Project = props => {
             padding: 0.5em;
             padding-left: 0;
             margin-top: 0.5em;
-            border-radius: 0% ${roughly()}% ${roughly()}% 0%;
+            border-radius: ${roughly(0.3)}% ${roughly()}% ${roughly()}% 0%;
             background-color: ${projectBackground.toString()};
+            transition: background-color 0.5s ease-in-out;
             &:hover {
               background-color: ${projectHighlight.toString()};
             }
