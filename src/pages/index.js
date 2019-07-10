@@ -4,7 +4,7 @@ import { GoMarkGithub } from 'react-icons/go'
 import { IoMdPaper } from 'react-icons/io'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import resume from '../assets/data/HannahLazarusResume.pdf'
+// import resume from '../assets/data/HannahLazarusResume.pdf'
 import LinkedIn from '../assets/images/linkedin'
 import InfoItem from '../components/workinfoitem'
 
@@ -32,7 +32,7 @@ const IndexPage = () => (
         Developer using mostly Python and Javascript, usually with Django and
         React. Comfortable on the command line. Using git for version control.
       </p>
-      <InfoItem Icon={IoMdPaper} description="PDF Resume" link={resume} />
+      <InfoItem Icon={IoMdPaper} description="PDF Resume" link={null} />
       <InfoItem
         Icon={GoMarkGithub}
         description="Github"
