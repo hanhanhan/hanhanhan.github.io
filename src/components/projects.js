@@ -4,9 +4,31 @@ import React from 'react'
 //     name: ``,
 //     link: ``,
 //     description: <></>,
-//     language: ``,
+//     language: [],
 //     year: ``,
 // }
+
+const multiPlayer = {
+  name: `Unity API`,
+  link: `https://github.com/hanhanhan/multiplayer`,
+  description: (
+    <>
+      <p>
+        Django based API (using the Django REST Framework library) for
+        consumption by a Unity-based game app.
+      </p>
+      <p>
+        With{' '}
+        <a href="https://github.com/hanhanhan/multiplayer/blob/master/unity_userdata/tests/test_views.py">
+          tests
+        </a>
+        .
+      </p>
+    </>
+  ),
+  language: [`python`],
+  year: `2017`,
+}
 
 const fakebus = {
   name: `Fakebus`,
@@ -155,7 +177,7 @@ const bokeh = {
       <p>
         Resting metabolism rate plotted using a user-selected equation and
         parameters. Parameters are equation-dependent. Playing with the Bokeh
-        library for data visualization. 
+        library for data visualization.
       </p>
     </>
   ),
@@ -171,7 +193,7 @@ const robotrkelly = {
       <p>
         My first server based site. It included a Flask site, database, a server
         I set up on Digital Ocean, HTTPS, nginx, changing around some systemd
-        settings, and a cron job. 
+        settings, and a cron job.
       </p>
       <p>
         Inspired by a challenge from{' '}
@@ -206,6 +228,7 @@ const robotrkelly = {
 }
 
 const projects = [
+  multiPlayer,
   fakebus,
   deliquescent,
   cellular,
