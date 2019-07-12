@@ -21,7 +21,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `public/favicons.ico/favicon-96x96.png`, // This path is relative to the root of the site.
+        icon: `public/icons/favicon-32x32.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-emotion`,
@@ -34,6 +34,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ]
+    `gatsby-plugin-offline`,
+  ],
+  pathPrefix: `/hanhanhan.github.io`,
 }
