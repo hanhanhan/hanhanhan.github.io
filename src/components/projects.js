@@ -187,7 +187,7 @@ const bokeh = {
 
 const robotrkelly = {
   name: `Robot R Kelly`,
-  link: ``,
+  link: `https://rkelly.hanhanhan.org/`,
   description: (
     <>
       <p>
@@ -228,8 +228,8 @@ const robotrkelly = {
 }
 
 const projects = [
-  multiPlayer,
   fakebus,
+  multiPlayer,
   deliquescent,
   cellular,
   rattle,
