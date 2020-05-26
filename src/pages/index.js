@@ -27,6 +27,8 @@ const IndexPage = () => (
         css={css`
           text-align: left;
           padding: 1em 1.5em;
+          justify-self: start;
+          max-width: 750px;
         `}
       >
         Developer using mostly Python and Javascript, usually with Django and
