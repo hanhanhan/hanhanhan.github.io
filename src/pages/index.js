@@ -30,7 +30,7 @@ const IndexPage = () => (
         `}
       >
         Developer using mostly Python and Javascript, usually with Django and
-        React. Comfortable on the command line. Using git for version control.
+        React. Comfortable with Docker and Docker-Dompose.
       </p>
       <InfoItem Icon={IoMdPaper} description="PDF Resume" link={resume} />
       <InfoItem
